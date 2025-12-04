@@ -70,6 +70,14 @@ const Navbar = () => {
           </li>
           <li>
             <a
+              href="#education"
+              className={`${linkStyle} ${activeSection === "education" ? activeStyle : ""}`}
+            >
+              Education
+            </a>
+          </li>
+          <li>
+            <a
               href="#service"
               className={`${linkStyle} ${activeSection === "service" ? activeStyle : ""}`}
             >
@@ -127,6 +135,15 @@ const Navbar = () => {
               className={`${linkStyle} ${activeSection === "skills" ? activeStyle : ""}`}
             >
               Skills
+            </a>
+          </li>
+            <li>
+            <a
+              href="#education"
+              onClick={() => setOpen(false)}
+              className={`${linkStyle} ${activeSection === "education" ? activeStyle : ""}`}
+            >
+              Education
             </a>
           </li>
           <li>
